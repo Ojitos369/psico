@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 9</title>
+</head>
+<body>
+    <input type="number" value="240" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div>
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Seleccione la palabra que no corresponde con las demas del grupo
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="pregunta">
+                <p>Ejemplo 1</p>
+                <div>
+                    <input type="radio" name="eje1" value="A">Bala<br>
+                    <input type="radio" name="eje1" value="B">Cañon<br>
+                    <input type="radio" name="eje1" value="C">Pistola<br>
+                    <input type="radio" name="eje1" value="D">Espada<br>
+                    <input type="radio" name="eje1" value="E" checked>Lapiz<br>
+                </div>
+            </div>
+            <div class="pregunta">
+                <p>Ejemplo 2</p>
+                <div>
+                    <input type="radio" name="eje2" value="A">Canada<br>
+                    <input type="radio" name="eje2" value="B" checked>Sonora<br>
+                    <input type="radio" name="eje2" value="C">China<br>
+                    <input type="radio" name="eje2" value="D">India<br>
+                    <input type="radio" name="eje2" value="E">Francia<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_9.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1</p>
+                <input type="radio" name="respuesta1" value="A">Saltar<br>
+                <input type="radio" name="respuesta1" value="B">Correr<br>
+                <input type="radio" name="respuesta1" value="C">Brincar<br>
+                <input type="radio" name="respuesta1" value="D">Pararse<br>
+                <input type="radio" name="respuesta1" value="E">Caminar<br>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2</p>
+                <input type="radio" name="respuesta2" value="A">Monarquia<br>
+                <input type="radio" name="respuesta2" value="B">Comunista<br>
+                <input type="radio" name="respuesta2" value="C">Demócrata<br>
+                <input type="radio" name="respuesta2" value="D">Anarquista<br>
+                <input type="radio" name="respuesta2" value="E">Católico<br>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3</p>
+                <input type="radio" name="respuesta3" value="A">Muerte<br>
+                <input type="radio" name="respuesta3" value="B">Duelo<br>
+                <input type="radio" name="respuesta3" value="C">Paseo<br>
+                <input type="radio" name="respuesta3" value="D">Pobreza<br>
+                <input type="radio" name="respuesta3" value="E">Tristeza<br>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4</p>
+                <input type="radio" name="respuesta4" value="A">Carpintero<br>
+                <input type="radio" name="respuesta4" value="B">Doctor<br>
+                <input type="radio" name="respuesta4" value="C">Abogado<br>
+                <input type="radio" name="respuesta4" value="D">Ingeniero<br>
+                <input type="radio" name="respuesta4" value="E">Profesor<br>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5</p>
+                <input type="radio" name="respuesta5" value="A">Cama<br>
+                <input type="radio" name="respuesta5" value="B">Silla<br>
+                <input type="radio" name="respuesta5" value="C">Plato<br>
+                <input type="radio" name="respuesta5" value="D">Sopa<br>
+                <input type="radio" name="respuesta5" value="E">Mesa<br>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6</p>
+                <input type="radio" name="respuesta6" value="A">Francisco<br>
+                <input type="radio" name="respuesta6" value="B">Santiago<br>
+                <input type="radio" name="respuesta6" value="C">Juan<br>
+                <input type="radio" name="respuesta6" value="D">Sara<br>
+                <input type="radio" name="respuesta6" value="E">Guillen<br>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7</p>
+                <input type="radio" name="respuesta7" value="A">Duro<br>
+                <input type="radio" name="respuesta7" value="B">Aspero<br>
+                <input type="radio" name="respuesta7" value="C">Liso<br>
+                <input type="radio" name="respuesta7" value="D">Suave<br>
+                <input type="radio" name="respuesta7" value="E">Dulce<br>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8</p>
+                <input type="radio" name="respuesta8" value="A">Digestivo<br>
+                <input type="radio" name="respuesta8" value="B">Odio<br>
+                <input type="radio" name="respuesta8" value="C">Vista<br>
+                <input type="radio" name="respuesta8" value="D">Olfato<br>
+                <input type="radio" name="respuesta8" value="E">Tacto<br>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9</p>
+                <input type="radio" name="respuesta9" value="A">Automovil<br>
+                <input type="radio" name="respuesta9" value="B">Bicicleta<br>
+                <input type="radio" name="respuesta9" value="C">Guayin<br>
+                <input type="radio" name="respuesta9" value="D">Telégrafo<br>
+                <input type="radio" name="respuesta9" value="E">Tren<br>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10</p>
+                <input type="radio" name="respuesta10" value="A">Abajo<br>
+                <input type="radio" name="respuesta10" value="B">Aca<br>
+                <input type="radio" name="respuesta10" value="C">Reciente<br>
+                <input type="radio" name="respuesta10" value="D">Arriba<br>
+                <input type="radio" name="respuesta10" value="E">Alla<br>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11</p>
+                <input type="radio" name="respuesta11" value="A">Hidalgo<br>
+                <input type="radio" name="respuesta11" value="B">Morelos<br>
+                <input type="radio" name="respuesta11" value="C">Bravo<br>
+                <input type="radio" name="respuesta11" value="D">Matamoros<br>
+                <input type="radio" name="respuesta11" value="E">Bolivar<br>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12</p>
+                <input type="radio" name="respuesta12" value="A">Danes<br>
+                <input type="radio" name="respuesta12" value="B">Galgo<br>
+                <input type="radio" name="respuesta12" value="C">Bulldog<br>
+                <input type="radio" name="respuesta12" value="D">Pekines<br>
+                <input type="radio" name="respuesta12" value="E">Longhori<br>
+            </div>
+            <div class="pregunta p13">
+                <p class="pregunta_13 preguntaTexto">13</p>
+                <input type="radio" name="respuesta13" value="A">Tela<br>
+                <input type="radio" name="respuesta13" value="B">Algodon<br>
+                <input type="radio" name="respuesta13" value="C">Lino<br>
+                <input type="radio" name="respuesta13" value="D">Seda<br>
+                <input type="radio" name="respuesta13" value="E">Lana<br>
+            </div>
+            <div class="pregunta p14">
+                <p class="pregunta_14 preguntaTexto">14</p>
+                <input type="radio" name="respuesta14" value="A">Ira<br>
+                <input type="radio" name="respuesta14" value="B">Odio<br>
+                <input type="radio" name="respuesta14" value="C">Alegria<br>
+                <input type="radio" name="respuesta14" value="D">Piedad<br>
+                <input type="radio" name="respuesta14" value="E">Razonamiento<br>
+            </div>
+            <div class="pregunta p15">
+                <p class="pregunta_15 preguntaTexto">15</p>
+                <input type="radio" name="respuesta15" value="A">Edison<br>
+                <input type="radio" name="respuesta15" value="B">Franklin<br>
+                <input type="radio" name="respuesta15" value="C">Marconi<br>
+                <input type="radio" name="respuesta15" value="D">Fulton<br>
+                <input type="radio" name="respuesta15" value="E">Shakspiare<br>
+            </div>
+            <div class="pregunta p16">
+                <p class="pregunta_16 preguntaTexto">16</p>
+                <input type="radio" name="respuesta16" value="A">Mariposa<br>
+                <input type="radio" name="respuesta16" value="B">Halcon<br>
+                <input type="radio" name="respuesta16" value="C">Avestruz<br>
+                <input type="radio" name="respuesta16" value="D">Petirrojo<br>
+                <input type="radio" name="respuesta16" value="E">Golondrina<br>
+            </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17</p>
+                <input type="radio" name="respuesta17" value="A">Dar<br>
+                <input type="radio" name="respuesta17" value="B">Prestar<br>
+                <input type="radio" name="respuesta17" value="C">Perder<br>
+                <input type="radio" name="respuesta17" value="D">Ahorrar<br>
+                <input type="radio" name="respuesta17" value="E">Derrochar<br>
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18</p>
+                <input type="radio" name="respuesta18" value="A">Australia<br>
+                <input type="radio" name="respuesta18" value="B">Cuba<br>
+                <input type="radio" name="respuesta18" value="C">Corcega<br>
+                <input type="radio" name="respuesta18" value="D">Irlanda<br>
+                <input type="radio" name="respuesta18" value="E">España<br>
+            </div>
+            
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.instrucciones{
+    top: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.instrucciones h2{
+    margin-bottom: 10px;
+}
+
+hr{
+    border: 2px #000 solid;
+    margin: 25px 0 25px;
+}
+
+br{
+    margin: 5px 0 5px;
+}
+
+.pregunta{
+    background: #9605;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border: 1px #000 solid;
+    border-radius: 15px;
+}
+
+.preguntaTexto{
+    margin-bottom: 15px;
+}
+
+.boton_envio{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    left: 10%;
+    
+}
+
+@media screen and (min-width: 500px){
+    .pregunta{
+        width: 450px;
+    }
+}

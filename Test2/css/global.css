@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(255,233,0);
+    color: #000;
+}
+.logo, .encabezado{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .logo, .encabezado{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 180px;
+    }
+    #myVideo {
+        position: fixed;
+        top: 180px;
+        bottom: 0px;
+        right: 0px;
+        min-width: 100%;
+        min-height: (100%)-150px;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .logo, .encabezado{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 200px;
+    }
+
+    #myVideo {
+        position: fixed;
+        top: 200px;
+        bottom: 0px;
+        right: 0px;
+        min-width: 100%;
+        min-height: (100%)-150px;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+}
+
+.videobg{
+    position: relative;
+}
+
+#myVideo {
+    position: fixed;
+    top: 150px;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: (100%)-150px;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}

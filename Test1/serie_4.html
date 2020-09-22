@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 4</title>
+</head>
+<body>
+    <input type="number" value="240" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div>
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Seleccione las dos palabras que indique algo que siempre tiene el sujeto.<br><strong>Solamente 2 para cada opcion</strong>
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="pregunta">
+                <p>Un hombre siempre tiene: </p>
+                <div>
+                    <input type="checkbox" value="A" checked>Cuerpo<br>
+                    <input type="checkbox" value="B">Gorra<br>
+                    <input type="checkbox" value="C">Guantes<br>
+                    <input type="checkbox" value="D" checked>Boca<br>
+                    <input type="checkbox" value="E">Dinero<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_4.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- Un circulo tiene siempre</p>
+                <input type="checkbox" name="respuesta1[]" value="A">Altura<br>
+                <input type="checkbox" name="respuesta1[]" value="B">Circunferencia<br>
+                <input type="checkbox" name="respuesta1[]" value="C">Latitud<br>
+                <input type="checkbox" name="respuesta1[]" value="D">Longitud<br>
+                <input type="checkbox" name="respuesta1[]" value="E">Radio<br>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Un pájaro tiene siempre</p>
+                <input type="checkbox" name="respuesta2[]" value="A">Huesos<br>
+                <input type="checkbox" name="respuesta2[]" value="B">Huevos<br>
+                <input type="checkbox" name="respuesta2[]" value="C">Pico<br>
+                <input type="checkbox" name="respuesta2[]" value="D">Nido<br>
+                <input type="checkbox" name="respuesta2[]" value="E">Canto<br>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- La música tiene siempre</p>
+                <input type="checkbox" name="respuesta3[]" value="A">Oyente<br>
+                <input type="checkbox" name="respuesta3[]" value="B">Piano<br>
+                <input type="checkbox" name="respuesta3[]" value="C">Ritmo<br>
+                <input type="checkbox" name="respuesta3[]" value="D">Sonido<br>
+                <input type="checkbox" name="respuesta3[]" value="E">Violin<br>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- Un banquete tiene siempre</p>
+                <input type="checkbox" name="respuesta4[]" value="A">Alimento<br>
+                <input type="checkbox" name="respuesta4[]" value="B">Musica<br>
+                <input type="checkbox" name="respuesta4[]" value="C">Personas<br>
+                <input type="checkbox" name="respuesta4[]" value="D">Discurso<br>
+                <input type="checkbox" name="respuesta4[]" value="E">Anfitrion<br>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- Un caballo tiene siempre</p>
+                <input type="checkbox" name="respuesta5[]" value="A">Arnes<br>
+                <input type="checkbox" name="respuesta5[]" value="B">Cascos<br>
+                <input type="checkbox" name="respuesta5[]" value="C">Herraduras<br>
+                <input type="checkbox" name="respuesta5[]" value="D">Establo<br>
+                <input type="checkbox" name="respuesta5[]" value="E">Cola<br>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- Un juego tiene siempre</p>
+                <input type="checkbox" name="respuesta6[]" value="A">Cartas<br>
+                <input type="checkbox" name="respuesta6[]" value="B">Multas<br>
+                <input type="checkbox" name="respuesta6[]" value="C">Jugadores<br>
+                <input type="checkbox" name="respuesta6[]" value="D">Castigos<br>
+                <input type="checkbox" name="respuesta6[]" value="E">Reglas<br>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- Un objeto tiene siempre</p>
+                <input type="checkbox" name="respuesta7[]" value="A">Color<br>
+                <input type="checkbox" name="respuesta7[]" value="B">Tamaño<br>
+                <input type="checkbox" name="respuesta7[]" value="C">Sabor<br>
+                <input type="checkbox" name="respuesta7[]" value="D">Valor<br>
+                <input type="checkbox" name="respuesta7[]" value="E">Peso<br>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- Una conversacion tiene siempre</p>
+                <input type="checkbox" name="respuesta8[]" value="A">Acuerdos<br>
+                <input type="checkbox" name="respuesta8[]" value="B">Personas<br>
+                <input type="checkbox" name="respuesta8[]" value="C">Preguntas<br>
+                <input type="checkbox" name="respuesta8[]" value="D">Ingenio<br>
+                <input type="checkbox" name="respuesta8[]" value="E">Palabras<br>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Una deuda implica siempre</p>
+                <input type="checkbox" name="respuesta9[]" value="A">Acreedor<br>
+                <input type="checkbox" name="respuesta9[]" value="B">Deudor<br>
+                <input type="checkbox" name="respuesta9[]" value="C">Interes<br>
+                <input type="checkbox" name="respuesta9[]" value="D">Hipoteca<br>
+                <input type="checkbox" name="respuesta9[]" value="E">Pago<br>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10.- Un ciudadano tiene siempre</p>
+                <input type="checkbox" name="respuesta10[]" value="A">Pais<br>
+                <input type="checkbox" name="respuesta10[]" value="B">Ocupación<br>
+                <input type="checkbox" name="respuesta10[]" value="C">Derechos<br>
+                <input type="checkbox" name="respuesta10[]" value="D">Propiedad<br>
+                <input type="checkbox" name="respuesta10[]" value="E">Voto<br>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- Un museo tiene siempre</p>
+                <input type="checkbox" name="respuesta11[]" value="A">Animales<br>
+                <input type="checkbox" name="respuesta11[]" value="B">Orden<br>
+                <input type="checkbox" name="respuesta11[]" value="C">Colecciones<br>
+                <input type="checkbox" name="respuesta11[]" value="D">Minerales<br>
+                <input type="checkbox" name="respuesta11[]" value="E">Visitantes<br>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12.- Un compromiso implica siempre</p>
+                <input type="checkbox" name="respuesta12[]" value="A">Obligación<br>
+                <input type="checkbox" name="respuesta12[]" value="B">Acuerdo<br>
+                <input type="checkbox" name="respuesta12[]" value="C">Amistad<br>
+                <input type="checkbox" name="respuesta12[]" value="D">Respeto<br>
+                <input type="checkbox" name="respuesta12[]" value="E">Satisfacción<br>
+            </div>
+            <div class="pregunta p13">
+                <p class="pregunta_13 preguntaTexto">13.- Un bosque tiene siempre</p>
+                <input type="checkbox" name="respuesta13[]" value="A">Animales<br>
+                <input type="checkbox" name="respuesta13[]" value="B">Flores<br>
+                <input type="checkbox" name="respuesta13[]" value="C">Sombras<br>
+                <input type="checkbox" name="respuesta13[]" value="D">Maleza<br>
+                <input type="checkbox" name="respuesta13[]" value="E">Arboles<br>
+            </div>
+            <div class="pregunta p14">
+                <p class="pregunta_14 preguntaTexto">14.- Los obstaculos tienen siempre</p>
+                <input type="checkbox" name="respuesta14[]" value="A">Dificultad<br>
+                <input type="checkbox" name="respuesta14[]" value="B">Desaliento<br>
+                <input type="checkbox" name="respuesta14[]" value="C">Fracaso<br>
+                <input type="checkbox" name="respuesta14[]" value="D">Impedimiento<br>
+                <input type="checkbox" name="respuesta14[]" value="E">Estimulo<br>
+            </div>
+            <div class="pregunta p15">
+                <p class="pregunta_15 preguntaTexto">15.- El aborrecimiento tiene siempre</p>
+                <input type="checkbox" name="respuesta15[]" value="A">Aversion<br>
+                <input type="checkbox" name="respuesta15[]" value="B">Desagrado<br>
+                <input type="checkbox" name="respuesta15[]" value="C">Temor<br>
+                <input type="checkbox" name="respuesta15[]" value="D">Ira<br>
+                <input type="checkbox" name="respuesta15[]" value="E">Timidez<br>
+            </div>
+            <div class="pregunta p16">
+                <p class="pregunta_16 preguntaTexto">16.- Una revista tiene siempre</p>
+                <input type="checkbox" name="respuesta16[]" value="A">Anuncios<br>
+                <input type="checkbox" name="respuesta16[]" value="B">Papel<br>
+                <input type="checkbox" name="respuesta16[]" value="C">Fotografias<br>
+                <input type="checkbox" name="respuesta16[]" value="D">Grabados<br>
+                <input type="checkbox" name="respuesta16[]" value="E">Impresion<br>
+            </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17.- La controversia implica siempre</p>
+                <input type="checkbox" name="respuesta17[]" value="A">Argumento<br>
+                <input type="checkbox" name="respuesta17[]" value="B">Desacuerdos<br>
+                <input type="checkbox" name="respuesta17[]" value="C">Aversion<br>
+                <input type="checkbox" name="respuesta17[]" value="D">Publico<br>
+                <input type="checkbox" name="respuesta17[]" value="E">Resumen<br>
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18.- Un barco tiene siempre</p>
+                <input type="checkbox" name="respuesta18[]" value="A">Maquinaria<br>
+                <input type="checkbox" name="respuesta18[]" value="B">Cañones<br>
+                <input type="checkbox" name="respuesta18[]" value="C">Quilla<br>
+                <input type="checkbox" name="respuesta18[]" value="D">Timon<br>
+                <input type="checkbox" name="respuesta18[]" value="E">Velas<br>
+            </div>
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

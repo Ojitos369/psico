@@ -1,0 +1,2 @@
+# psicometria
+Pagina de psicometria

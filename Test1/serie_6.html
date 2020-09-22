@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 6</title>
+</head>
+<body>
+    <input type="number" value="120" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div class="cuerpo">
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Seleccione la opcion correcta como lo muestran los ejemplos
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="ejemplo1 pregunta">
+                <p>Se hace el carbon de madera</p>
+                <div class="respuesta e1">
+                    <select name="reseje1" class="select eje1">
+                        <option value="S" selected>Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ejemplo2 pregunta">
+                <p>Tienen todos los hombres 1.70 mts. de altura</p>
+                <div class="respuesta e2">
+                    <select name="reseje2" class="select eje2">
+                        <option value="S">Si</option>
+                        <option value="N" selected>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_6.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- La higiene es esencial para la salud</p>
+                <div class="respuesta r1">
+                    <select name="respuesta1" class="select select1">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Los taquigrafos usan microscopio</p>
+                <div class="respuesta r2">
+                    <select name="respuesta2" class="select select2">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- Los tiranos son justos con sus inferiores</p>
+                <div class="respuesta r3">
+                    <select name="respuesta3" class="select select3">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- Las personas desamparadas estan sujetas con frecuencia a la caridad</p>
+                <div class="respuesta r4">
+                    <select name="respuesta4" class="select select4">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- Las personas venerables son por lo comun respetadas</p>
+                <div class="respuesta r5">
+                    <select name="respuesta5" class="select select5">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- Es el escarbuto un medicamento</p>
+                <div class="respuesta r6">
+                    <select name="respuesta6" class="select select6">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- Es la amonestacion una clase de instrumento musical</p>
+                <div class="respuesta r7">
+                    <select name="respuesta7" class="select select7">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- Son los colores opacos preferidos para las bandas nacionales</p>
+                <div class="respuesta r8">
+                    <select name="respuesta8" class="select select8">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Las cosas misteriosas son aveces pavorosas</p>
+                <div class="respuesta r9">
+                    <select name="respuesta9" class="select select9">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10.- Personas consientes cometen alguna vez errores</p>
+                <div class="respuesta r10">
+                    <select name="respuesta10" class="select select10">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- Son carnivoros los carneros</p>
+                <div class="respuesta r11">
+                    <select name="respuesta11" class="select select11">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12.- Se dan asignaturas a los caballos</p>
+                <div class="respuesta r12">
+                    <select name="respuesta12" class="select select12">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p13">
+                <p class="pregunta_13 preguntaTexto">13.- Las cartas anonimas llevan alguna firma de quien las escribe</p>
+                <div class="respuesta r13">
+                    <select name="respuesta13" class="select select13">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p14">
+                <p class="pregunta_14 preguntaTexto">14.- Son discontinuos los sonidos intermitentes</p>
+                <div class="respuesta r14">
+                    <select name="respuesta14" class="select select14">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p15">
+                <p class="pregunta_15 preguntaTexto">15.- Las enfermedades estimulan el buen juicio</p>
+                <div class="respuesta r15">
+                    <select name="respuesta15" class="select select15">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p16">
+                <p class="pregunta_16 preguntaTexto">16.- Son siempre perversos los hechos premeditados</p>
+                <div class="respuesta r16">
+                    <select name="respuesta16" class="select select16">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17.- El contacto social tiende a reducir la timidez</p>
+                <div class="respuesta r17">
+                    <select name="respuesta17" class="select select17">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18.- Son enfermas las personas que tienen mal caracter</p>
+                <div class="respuesta r18">
+                    <select name="respuesta18" class="select select18">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p19">
+                <p class="pregunta_19 preguntaTexto">19.- Se caracterizan generalmente el rencor por la persistencia</p>
+                <div class="respuesta r19">
+                    <select name="respuesta19" class="select select19">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p20">
+                <p class="pregunta_20 preguntaTexto">20.- Meticuloso quiere decir lo mismo que cuidadoso</p>
+                <div class="respuesta r20">
+                    <select name="respuesta20" class="select select20">
+                        <option value=""></option>
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

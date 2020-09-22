@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 3</title>
+</head>
+<body>
+    <input type="number" value="180" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div class="cuerpo">
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Cuando las dos palabras signifiquen lo mismo seleccione Igual, cuando signifiquen lo opuesto seleccione Opuesto
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="ejemplo1 pregunta">
+                <p>Tirar - Arrojar</p>
+                <div class="respuesta e1">
+                    <select name="reseje1" class="select eje1">
+                        <option value="I" selected>Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ejemplo2 pregunta">
+                <p>Norte - Sur</p>
+                <div class="respuesta e2">
+                    <select name="reseje2" class="select eje2">
+                        <option value="I">Igual</option>
+                        <option value="O" selected>Opuesto</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_3.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- Salado  - Dulce</p>
+                <div class="respuesta r1">
+                    <select name="respuesta1" class="select select1">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Alegre - Regocijarse</p>
+                <div class="respuesta r2">
+                    <select name="respuesta2" class="select select2">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- Mayor - Menor</p>
+                <div class="respuesta r3">
+                    <select name="respuesta3" class="select select3">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- Sentarse - Pararse</p>
+                <div class="respuesta r4">
+                    <select name="respuesta4" class="select select4">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- Desperdiciar - Aprovechar</p>
+                <div class="respuesta r5">
+                    <select name="respuesta5" class="select select5">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- Conocer - Negar</p>
+                <div class="respuesta r6">
+                    <select name="respuesta6" class="select select6">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- Tonico - Estimular</p>
+                <div class="respuesta r7">
+                    <select name="respuesta7" class="select select7">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- Rebajar - Denigrar</p>
+                <div class="respuesta r8">
+                    <select name="respuesta8" class="select select8">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Prohibir - Permitir</p>
+                <div class="respuesta r9">
+                    <select name="respuesta9" class="select select9">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10.- Osado - Audaz</p>
+                <div class="respuesta r10">
+                    <select name="respuesta10" class="select select10">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- Arrebatado - Prudente</p>
+                <div class="respuesta r11">
+                    <select name="respuesta11" class="select select11">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12.- Obtuso - Agudo</p>
+                <div class="respuesta r12">
+                    <select name="respuesta12" class="select select12">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p13">
+                <p class="pregunta_13 preguntaTexto">13.- Inepto - Experto</p>
+                <div class="respuesta r13">
+                    <select name="respuesta13" class="select select13">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p14">
+                <p class="pregunta_14 preguntaTexto">14.- Esquivar - Rehuir</p>
+                <div class="respuesta r14">
+                    <select name="respuesta14" class="select select14">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p15">
+                <p class="pregunta_15 preguntaTexto">15.- Revelarse - Someterse</p>
+                <div class="respuesta r15">
+                    <select name="respuesta15" class="select select15">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p16">
+                <p class="pregunta_16 preguntaTexto">16.- Monotonia - Variedad</p>
+                <div class="respuesta r16">
+                    <select name="respuesta16" class="select select16">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17.- Confortar - Consolar</p>
+                <div class="respuesta r17">
+                    <select name="respuesta17" class="select select17">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18.- Expeler - Retener</p>
+                <div class="respuesta r18">
+                    <select name="respuesta18" class="select select18">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p19">
+                <p class="pregunta_19 preguntaTexto">19.- Docil - Sumiso</p>
+                <div class="respuesta r19">
+                    <select name="respuesta19" class="select select19">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p20">
+                <p class="pregunta_20 preguntaTexto">20.- Transitorio - Permanente</p>
+                <div class="respuesta r20">
+                    <select name="respuesta20" class="select select20">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p21">
+                <p class="pregunta_21 preguntaTexto">21.- Seguridad - Riesgo</p>
+                <div class="respuesta r21">
+                    <select name="respuesta21" class="select select21">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p22">
+                <p class="pregunta_22 preguntaTexto">22.- Aprobar - Objetar</p>
+                <div class="respuesta r22">
+                    <select name="respuesta22" class="select select22">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p23">
+                <p class="pregunta_23 preguntaTexto">23.- Expeler - Arrojar</p>
+                <div class="respuesta r23">
+                    <select name="respuesta23" class="select select23">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p24">
+                <p class="pregunta_24 preguntaTexto">24.- Engaño - Impostura</p>
+                <div class="respuesta r24">
+                    <select name="respuesta24" class="select select24">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p25">
+                <p class="pregunta_25 preguntaTexto">25.- Mitigar - Apaciguar</p>
+                <div class="respuesta r25">
+                    <select name="respuesta25" class="select select25">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p26">
+                <p class="pregunta_26 preguntaTexto">26.- Iniciativa - Aplacar</p>
+                <div class="respuesta r26">
+                    <select name="respuesta26" class="select select26">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p27">
+                <p class="pregunta_27 preguntaTexto">27.- Reverencia - Veneracion</p>
+                <div class="respuesta r27">
+                    <select name="respuesta27" class="select select27">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p28">
+                <p class="pregunta_28 preguntaTexto">28.- Sobriedad - Frugalidad</p>
+                <div class="respuesta r28">
+                    <select name="respuesta28" class="select select28">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p29">
+                <p class="pregunta_29 preguntaTexto">29.- Aumentar - Menguar</p>
+                <div class="respuesta r29">
+                    <select name="respuesta29" class="select select29">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pregunta p30">
+                <p class="pregunta_30 preguntaTexto">30.- Incitar - Instigar</p>
+                <div class="respuesta r30">
+                    <select name="respuesta30" class="select select30">
+                        <option value=""></option>
+                        <option value="I">Igual</option>
+                        <option value="O">Opuesto</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

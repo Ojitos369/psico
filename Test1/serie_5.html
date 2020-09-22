@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 5</title>
+</head>
+<body>
+    <input type="number" value="300" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div class="cuerpo">
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Encuentre las respuestas lo mas pronto posible <br> <strong>Las respuestas solo admiten numeros <br> Utilice una hoja para hacer las operaciones</strong>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_5.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- <strong>A 2 por 5 pesos. </strong>Cuantos lápices pueden comprar con 50 pesos?</p>
+                <div class="respuesta r1">
+                    <input type="number" step="any" name="respuesta1">
+                </div>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Cuantas horas tardara un automovil en recorrer 660 kilometros a la velocidad de 60 kilometros por hora</p>
+                <div class="respuesta r2">
+                    <input type="number" step="any" name="respuesta2">
+                </div>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- <strong>Si un hombre gana $200.00 diarios y gasta $140.00.</strong> Cuantos dias tardara en ahorrar $3000.00</p>
+                <div class="respuesta r3">
+                    <input type="number" step="any" name="respuesta3">
+                </div>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- <strong>Si dos pasteles cuestan $600.00</strong> Cuantos pesos cuesta la sexta parte del paste?</p>
+                <div class="respuesta r4">
+                    <input type="number" step="any" name="respuesta4">
+                </div>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- Cuantas veces mas es <strong>2 x 3 x 4 x 6 </strong>que <strong>3 x 4</strong></p>
+                <div class="respuesta r5">
+                    <input type="number" step="any" name="respuesta5">
+                </div>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- Cuanto es el 15 por ciento de <strong>$120.00</strong></p>
+                <div class="respuesta r6">
+                    <input type="number" step="any" name="respuesta6">
+                </div>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- El 4 por ciento de <strong>$1000.00</strong> es igaul al <strong>8</strong> por ciento <strong>De que cantidad?</strong></p>
+                <div class="respuesta r7">
+                    <input type="number" step="any" name="respuesta7">
+                </div>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- La capacidad de un refrigerador rectangulas es de <strong>48</strong> metros cubicos, si tiene seis metros de largo por cuatro de ancho. <strong>Cual es su altura?</strong></p>
+                <div class="respuesta r8">
+                    <input type="number" step="any" name="respuesta8">
+                </div>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Si 7 hombres hacen un pozo de <strong>40 metros</strong> en <strong>2</strong> dias. <strong>Cuantos se necesitan para hacerlo en medio dia?</strong></p>
+                <div class="respuesta r9">
+                    <input type="number" step="any" name="respuesta9">
+                </div>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaText4">10.- <strong>(A)</strong> tiene <strong>$180.00, (B)</strong> tiene <strong>2/3</strong> de lo que tiene <strong>(A)</strong> y <strong>(C)</strong> tiene <strong>1/2</strong> de lo que tiene <strong>(B). Cuanto tienen todos juntos?</strong></p>
+                <div class="respuesta r10">
+                    <input type="number" step="any" name="respuesta10">
+                </div>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- Si un hombre corre <strong>100 metros</strong> en <strong>10</strong> segundos. Cuantos metros recorrera como promredio en <strong>1/5</strong> de segundo?</p>
+                <div class="respuesta r11">
+                    <input type="number" step="any" name="respuesta11">
+                </div>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12.- Un hombre gasta <strong>1/4</strong> de su sueldo en la casa y alimento. <strong>4/8</strong> en otros gastos. <strong>Que tanto por ciento de su sueldo ahorra?</strong></p>
+                <div class="respuesta r12">
+                    <input type="number" step="any" name="respuesta12">
+                </div>
+            </div>
+            
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

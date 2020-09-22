@@ -1,0 +1,63 @@
+.container-grafica{
+    position: sticky;
+    width: 100%;
+    top: 150px;
+}
+
+#grafica{
+    width: 100%;
+    height: 100%;
+}
+
+.tablas{
+    position: relative;
+    background-color: rgb(255,233,0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    top: 100px;
+}
+
+table{
+    padding: 5px;
+    border: 8px #000 double;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+td {
+    min-width: 80px;
+    padding: 5px 10px 5px 5px;
+    margin: 0;
+}
+
+.tabla-center{
+    text-align: center;
+}
+.container-tabla-chica td{
+    min-width: 80px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .container-grafica{
+        height: 500px;
+        top: 180px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .container-grafica{
+        height: 500px;
+        top: 200px;
+    }
+}
+
+@media screen and (max-height: 400px){
+    #grafica{
+        height: 300px;
+    }
+    .container-grafica{
+        height: 300px;
+    }
+}

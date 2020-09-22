@@ -1,0 +1,37 @@
+.bienvenida{
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: #a60;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    bottom: 0px;
+}
+
+li{
+    margin: 15px;
+}
+
+button{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+p{
+    font-size: 20px;
+}
+.tiempos{
+    margin-left: 50px;
+}
+
+li{
+    font-size: 20px;
+}

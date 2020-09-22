@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(255,233,0);
+    color: #000;
+}
+.logo, .encabezado{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+}
+
+input::placeholder{
+    background: #0005;
+    color: #fff;
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .logo, .encabezado{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .logo, .encabezado{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 200px;
+    }
+}

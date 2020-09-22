@@ -1,0 +1,60 @@
+<?php session_start(); ?>
+<?php
+    include("conexion.php");
+    $id = $_SESSION['id'];
+    $respuestas = array();
+    error_reporting(E_ALL ^ E_NOTICE);
+    for($i = 1; $i<31;$i++){
+        $temp = $_POST['respuesta'.$i];
+        array_push($respuestas, $temp);
+    }
+    $puntaje = 30;
+    if($respuestas[0]!='O') $puntaje-=2;
+    if($respuestas[1]!='I') $puntaje-=2;
+    if($respuestas[2]!='O') $puntaje-=2;
+    if($respuestas[3]!='O') $puntaje-=2;
+    if($respuestas[4]!='O') $puntaje-=2;
+    if($respuestas[5]!='O') $puntaje-=2;
+    if($respuestas[6]!='I') $puntaje-=2;
+    if($respuestas[7]!='I') $puntaje-=2;
+    if($respuestas[8]!='O') $puntaje-=2;
+    if($respuestas[9]!='I') $puntaje-=2;
+    if($respuestas[10]!='O') $puntaje-=2;
+    if($respuestas[11]!='O') $puntaje-=2;
+    if($respuestas[12]!='O') $puntaje-=2;
+    if($respuestas[13]!='I') $puntaje-=2;
+    if($respuestas[14]!='O') $puntaje-=2;
+    if($respuestas[15]!='O') $puntaje-=2;
+    if($respuestas[16]!='I') $puntaje-=2;
+    if($respuestas[17]!='O') $puntaje-=2;
+    if($respuestas[18]!='I') $puntaje-=2;
+    if($respuestas[19]!='O') $puntaje-=2;
+    if($respuestas[20]!='O') $puntaje-=2;
+    if($respuestas[21]!='O') $puntaje-=2;
+    if($respuestas[22]!='I') $puntaje-=2;
+    if($respuestas[23]!='I') $puntaje-=2;
+    if($respuestas[24]!='I') $puntaje-=2;
+    if($respuestas[25]!='O') $puntaje-=2;
+    if($respuestas[26]!='I') $puntaje-=2;
+    if($respuestas[27]!='O') $puntaje-=2;
+    if($respuestas[28]!='O') $puntaje-=2;
+    if($respuestas[29]!='I') $puntaje-=2;
+    if($puntaje<0) $puntaje = 0;
+    $accion =  "UPDATE `test1` SET `puntaje3` = '$puntaje' WHERE `test1`.`identificacion` = $id";
+    $conexion->query($accion);
+    $rango="";
+    if(($puntaje >= 0) && ($puntaje <= 7)) $rango = "Deficiente";
+    if(($puntaje >= 8) && ($puntaje <= 11)) $rango = "Inferior";
+    if(($puntaje >= 12) && ($puntaje <= 13)) $rango = "Term. M.B.";
+    if(($puntaje >= 14) && ($puntaje <= 22)) $rango = "Term. Medio";
+    if(($puntaje >= 23) && ($puntaje <= 26)) $rango = "Term. M.A.";
+    if(($puntaje >= 27) && ($puntaje <= 28)) $rango = "Superior";
+    if(($puntaje >= 29) && ($puntaje <= 30)) $rango = "Excelente";
+    $accion =  "UPDATE `test1` SET `res3` = '$rango' WHERE `test1`.`identificacion` = $id";
+    $conexion->query($accion);
+    $puntaje = $puntaje * 100 / 30;
+    $accion =  "UPDATE `test1` SET `serie3` = '$puntaje' WHERE `test1`.`identificacion` = $id";
+    $conexion->query($accion);
+    mysqli_close($conexion);
+    header('Location: ../serie_4.html');
+?>

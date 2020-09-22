@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 2</title>
+</head>
+<body>
+    <input type="number" value="180" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div>
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Lea cada cuestion y seleccione la opcion correspondiente a la mejor respuesta tal como lo muestra el ejemplo
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="pregunta">
+                <p>Por qué compramos relojes? Por que:</p>
+                <div>
+                    <input type="radio" value="opcion 1" name="Ejemplo">Nos gusta oirlos sonar<br>
+                    <input type="radio" value="opcion 2" name="Ejemplo">Tiene manecillas<br>
+                    <input type="radio" value="opcion 3" name="Ejemplo" checked>Nos indican las horas<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_2.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- Si la Tierra estuviera mas cerca del Sol: </p>
+                <input type="radio" value="A" name="respuesta1">Las estrellas desaparecerían<br>
+                <input type="radio" value="B" name="respuesta1">Los meses serían mas largos<br>
+                <input type="radio" value="C" name="respuesta1">La Tierra estaria más caliente<br>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Los rayos de una rueda están frecuentemente hechos de nogal por que: </p>
+                <input type="radio" value="A" name="respuesta2">El nogal es fuerte<br>
+                <input type="radio" value="B" name="respuesta2">Se corta fácilmente<br>
+                <input type="radio" value="C" name="respuesta2">Sus frenos no son buenos<br>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- Un tren se detiene con mas dificultad que un automovil. Por que: </p>
+                <input type="radio" value="A" name="respuesta3">Tiene mas ruedas<br>
+                <input type="radio" value="B" name="respuesta3">Es más pesado<br>
+                <input type="radio" value="C" name="respuesta3">Sus frenos no son buenos<br>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- El dicho "A golpecitos se derriba un roble" quiere decir: </p>
+                <input type="radio" value="A" name="respuesta4">Que los robles son débiles<br>
+                <input type="radio" value="B" name="respuesta4">Que son mejores los golpes pequeños<br>
+                <input type="radio" value="C" name="respuesta4">Que el esfuerzo constante logra resultados sorprendentes<br>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- El dicho "Una olla vigilada nunca hierve" quiere decir: </p>
+                <input type="radio" value="A" name="respuesta5">Que no debemos vigilarla, cuando este en el fuego<br>
+                <input type="radio" value="B" name="respuesta5">Que tarda en hervir<br>
+                <input type="radio" value="C" name="respuesta5">Que el tiempo se alarga cuando esperamos<br>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- El dicho "Siembra pasto mientras haya Sol" Quiere decir: </p>
+                <input type="radio" value="A" name="respuesta6">Que el pasto se siembra en verano<br>
+                <input type="radio" value="B" name="respuesta6">Que debemos aprovechar nuestras oportunidades<br>
+                <input type="radio" value="C" name="respuesta6">Que el pasto no debe cortarse en la noche<br>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- El dicho "Zapatero a sus zapatos" quiere decir: </p>
+                <input type="radio" value="A" name="respuesta7">Que un zapatero no debe abandonar sus zapatos<br>
+                <input type="radio" value="B" name="respuesta7">Que los zapateros no deben estar de ociosos<br>
+                <input type="radio" value="C" name="respuesta7">Que debemos trabajar en lo que podemos hacer mejor<br>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- El dicho "La cuña para que apriete tiene que ser del mismo palo" quiere decir: </p>
+                <input type="radio" value="A" name="respuesta8">Que el palo sirve para apretar<br>
+                <input type="radio" value="B" name="respuesta8">Que las cuñas siempre son de madera<br>
+                <input type="radio" value="C" name="respuesta8">Nos exigen mas las personas que nos conocen<br>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Un acorazado de acero flota por que: </p>
+                <input type="radio" value="A" name="respuesta9">La maquina lo hace flotar<br>
+                <input type="radio" value="B" name="respuesta9">Porque tiene grandes espacios huecos<br>
+                <input type="radio" value="C" name="respuesta9">Contiene algo de madera<br>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10.- Las plumas de las alas ayudan al pajaro a volar porque: </p>
+                <input type="radio" value="A" name="respuesta10">Las alas ofrecen una amplia superficie ligera<br>
+                <input type="radio" value="B" name="respuesta10">Mantienen el aire fuera del cuerpo<br>
+                <input type="radio" value="C" name="respuesta10">Disminuyen su peso<br>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- El dicho "Una golondrina no hace verano" quiere decir: </p>
+                <input type="radio" value="A" name="respuesta11">Que las golondrinas regresan<br>
+                <input type="radio" value="B" name="respuesta11">Que un simple dato no es suficiente<br>
+                <input type="radio" value="C" name="respuesta11">Que los pajaros se agregan a nuestros placeres de verano<br>
+            </div>
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

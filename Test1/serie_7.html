@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/temporalizador.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./js/temporalizador.js'></script>
+    <title>Serie 7</title>
+</head>
+<body>
+    <input type="number" value="120" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
+    <div>
+        <div class="item html">
+            <h2>0</h2>
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <title>Layer 1</title>
+                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
+            </g>
+            </svg>
+        </div>
+    <div>
+        <div class="instrucciones">
+            <h1>Instrucciones</h1>
+            <p>
+                Seleccione la respuesta correcta
+            </p>
+        </div>
+        <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="pregunta">
+                <p>Oido es a oir como el ojo es a:</p>
+                <div>
+                    <input type="radio" value="opcion 1" name="Ejemplo1">Mesa<br>
+                    <input type="radio" value="opcion 2" name="Ejemplo1" checked>Ver<br>
+                    <input type="radio" value="opcion 2" name="Ejemplo1">Mano<br>
+                    <input type="radio" value="opcion 3" name="Ejemplo1">Jugar<br>
+                </div>
+            </div>
+            <div class="pregunta">
+                <p>El sombrero es a la cabeza como el zapato es a:</p>
+                <div>
+                    <input type="radio" value="opcion 1" name="Ejemplo2">brazo<br>
+                    <input type="radio" value="opcion 2" name="Ejemplo2">Abrigo<br>
+                    <input type="radio" value="opcion 2" name="Ejemplo2" checked>Pie<br>
+                    <input type="radio" value="opcion 3" name="Ejemplo2">Pierna<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container_form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_7.php">
+            <div class="pregunta p1">
+                <p class="pregunta_1 preguntaTexto">1.- Abrigo es a usar como pan es a: </p>
+                <input type="radio" value="A" name="respuesta1">Comer<br>
+                <input type="radio" value="B" name="respuesta1">Hambre<br>
+                <input type="radio" value="C" name="respuesta1">Agua<br>
+                <input type="radio" value="D" name="respuesta1">Cocinas<br>
+            </div>
+            <div class="pregunta p2">
+                <p class="pregunta_2 preguntaTexto">2.- Semana es a mes como mes a: </p>
+                <input type="radio" value="A" name="respuesta2">Año<br>
+                <input type="radio" value="B" name="respuesta2">Hora<br>
+                <input type="radio" value="C" name="respuesta2">Minuto<br>
+                <input type="radio" value="D" name="respuesta2">Segundo<br>
+            </div>
+            <div class="pregunta p3">
+                <p class="pregunta_3 preguntaTexto">3.- Leon es a animal como rosa es a: </p>
+                <input type="radio" value="A" name="respuesta3">Olor<br>
+                <input type="radio" value="B" name="respuesta3">Hoja<br>
+                <input type="radio" value="C" name="respuesta3">Planta<br>
+                <input type="radio" value="D" name="respuesta3">Espina<br>
+            </div>
+            <div class="pregunta p4">
+                <p class="pregunta_4 preguntaTexto">4.- Libertad es a independencia como cautiverio es a: </p>
+                <input type="radio" value="A" name="respuesta4">Negro<br>
+                <input type="radio" value="B" name="respuesta4">Esclavitud<br>
+                <input type="radio" value="C" name="respuesta4">Libre<br>
+                <input type="radio" value="D" name="respuesta4">Sufrir<br>
+            </div>
+            <div class="pregunta p5">
+                <p class="pregunta_5 preguntaTexto">5.- Decir es a dijo como estar es a: </p>
+                <input type="radio" value="A" name="respuesta5">Cantar<br>
+                <input type="radio" value="B" name="respuesta5">Estuvo<br>
+                <input type="radio" value="C" name="respuesta5">Hablando<br>
+                <input type="radio" value="D" name="respuesta5">Canto<br>
+            </div>
+            <div class="pregunta p6">
+                <p class="pregunta_6 preguntaTexto">6.- Lunes es a Martes como Viernes es a: </p>
+                <input type="radio" value="A" name="respuesta6">Semana<br>
+                <input type="radio" value="B" name="respuesta6">Jueves<br>
+                <input type="radio" value="C" name="respuesta6">Dia<br>
+                <input type="radio" value="D" name="respuesta6">Sabado<br>
+            </div>
+            <div class="pregunta p7">
+                <p class="pregunta_7 preguntaTexto">7.- Plomo es a Pesado como Corcho es a: </p>
+                <input type="radio" value="A" name="respuesta7">Botella<br>
+                <input type="radio" value="B" name="respuesta7">Peso<br>
+                <input type="radio" value="C" name="respuesta7">Ligero<br>
+                <input type="radio" value="D" name="respuesta7">Flotar<br>
+            </div>
+            <div class="pregunta p8">
+                <p class="pregunta_8 preguntaTexto">8.- Exito es a Alegria como Fracaso es a: </p>
+                <input type="radio" value="A" name="respuesta8">Tristeza<br>
+                <input type="radio" value="B" name="respuesta8">Suerte<br>
+                <input type="radio" value="C" name="respuesta8">Fracasar<br>
+                <input type="radio" value="D" name="respuesta8">Trabajo<br>
+            </div>
+            <div class="pregunta p9">
+                <p class="pregunta_9 preguntaTexto">9.- Gato es a Tigre como Perro es a: </p>
+                <input type="radio" value="A" name="respuesta9">Lobo<br>
+                <input type="radio" value="B" name="respuesta9">Ladrido<br>
+                <input type="radio" value="C" name="respuesta9">Mordida<br>
+                <input type="radio" value="D" name="respuesta9">Agarrar<br>
+            </div>
+            <div class="pregunta p10">
+                <p class="pregunta_10 preguntaTexto">10.- Cuatro es a Diez y seis como Cinco es a: </p>
+                <input type="radio" value="A" name="respuesta10">Siete<br>
+                <input type="radio" value="B" name="respuesta10">Cuarenta y cinco<br>
+                <input type="radio" value="C" name="respuesta10">Treinta y cinco<br>
+                <input type="radio" value="D" name="respuesta10">Veinticinco<br>
+            </div>
+            <div class="pregunta p11">
+                <p class="pregunta_11 preguntaTexto">11.- Lorar es a Reir como Triste es a: </p>
+                <input type="radio" value="A" name="respuesta11">Muerte<br>
+                <input type="radio" value="B" name="respuesta11">Alegre<br>
+                <input type="radio" value="C" name="respuesta11">Mortaja<br>
+                <input type="radio" value="D" name="respuesta11">Doctor<br>
+            </div>
+            <div class="pregunta p12">
+                <p class="pregunta_12 preguntaTexto">12.- Veneno es a Muerte como Alimento es a: </p>
+                <input type="radio" value="A" name="respuesta12">Comer<br>
+                <input type="radio" value="B" name="respuesta12">Pajaro<br>
+                <input type="radio" value="C" name="respuesta12">Vida<br>
+                <input type="radio" value="D" name="respuesta12">Malo<br>
+            </div>
+            <div class="pregunta p13">
+                <p class="pregunta_13 preguntaTexto">13.- 1 es a 3 como 9 es a: </p>
+                <input type="radio" value="A" name="respuesta13">18<br>
+                <input type="radio" value="B" name="respuesta13">27<br>
+                <input type="radio" value="C" name="respuesta13">36<br>
+                <input type="radio" value="D" name="respuesta13">45<br>
+            </div>
+            <div class="pregunta p14">
+                <p class="pregunta_14 preguntaTexto">14.- Alimento es a Hambre como Agua es a: </p>
+                <input type="radio" value="A" name="respuesta14">Beber<br>
+                <input type="radio" value="B" name="respuesta14">Claro<br>
+                <input type="radio" value="C" name="respuesta14">Sed<br>
+                <input type="radio" value="D" name="respuesta14">Puro<br>
+            </div>
+            <div class="pregunta p15">
+                <p class="pregunta_15 preguntaTexto">15.- Aqui es Alli como Este es a: </p>
+                <input type="radio" value="A" name="respuesta15">Estos<br>
+                <input type="radio" value="B" name="respuesta15">Aquel<br>
+                <input type="radio" value="C" name="respuesta15">Ese<br>
+                <input type="radio" value="D" name="respuesta15">Entonces<br>
+            </div>
+            <div class="pregunta p16">
+                <p class="pregunta_16 preguntaTexto">16.- Tigre es a Pelo como Trucha es a: </p>
+                <input type="radio" value="A" name="respuesta16">Agua<br>
+                <input type="radio" value="B" name="respuesta16">Pez<br>
+                <input type="radio" value="C" name="respuesta16">Escama<br>
+                <input type="radio" value="D" name="respuesta16">Nadar<br>
+            </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17.- Pervertido es a Depravado como Incorrupto es a: </p>
+                <input type="radio" value="A" name="respuesta17">Patria<br>
+                <input type="radio" value="B" name="respuesta17">Honrado<br>
+                <input type="radio" value="C" name="respuesta17">Sancion<br>
+                <input type="radio" value="D" name="respuesta17">Estudio<br>
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18.- (B) es a (D) como Segundo es a: </p>
+                <input type="radio" value="A" name="respuesta18">Tercero<br>
+                <input type="radio" value="B" name="respuesta18">Ultimo<br>
+                <input type="radio" value="C" name="respuesta18">Cuarto<br>
+                <input type="radio" value="D" name="respuesta18">Posterior<br>
+            </div>
+            <div class="pregunta p19">
+                <p class="pregunta_19 preguntaTexto">19.- Estado es a Gobernador como Ejercito es a: </p>
+                <input type="radio" value="A" name="respuesta19">Marina<br>
+                <input type="radio" value="B" name="respuesta19">Soldado<br>
+                <input type="radio" value="C" name="respuesta19">General<br>
+                <input type="radio" value="D" name="respuesta19">Sargento<br>
+            </div>
+            <div class="pregunta p20">
+                <p class="pregunta_20 preguntaTexto">20.- Sujeto es a Predicado como Nombre es a: </p>
+                <input type="radio" value="A" name="respuesta20">Pronombre<br>
+                <input type="radio" value="B" name="respuesta20">Adverbio<br>
+                <input type="radio" value="C" name="respuesta20">Verbo<br>
+                <input type="radio" value="D" name="respuesta20">Adjetivo<br>
+            </div>
+            <div class="boton_envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
+            </div>
+            <br>
+        </form>
+    </div>
+<script>
+    var tiempoTest = document.getElementById('tiempoTest').value;
+    setTimeout(function (){
+        document.forms["formulario"].submit();
+        alert('Se termino el Tiempo');
+    },tiempoTest*1000);
+</script>
+</body>
+</html>

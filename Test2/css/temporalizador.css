@@ -1,0 +1,35 @@
+.item {
+    position: fixed;
+    right: 20%;
+    top: 150px;
+}
+.item > h2 {
+    position: relative;
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+    top: -19px;
+}
+svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+} 
+
+.circle_animation {
+    stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .item {
+        top: 180px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .item {
+        top: 200px;
+    }
+}
