@@ -28,61 +28,105 @@
         <div id="grafica"></div>
     </div>
 
-    <div class="encabezado"><a href="index.php"><img src="./media/logo.jpg" alt="logo" class="logo"></a></div>
+    <table>
+<tr>
+  <td><strong>Descripcion</strong></td>
+  <td><strong>Escala</strong></td>
+  <td><strong>PD</strong></td>
+  <td><strong>PT</strong></td>
+  </tr>
 
-    <div class="container-grafica">
-        <div id="grafica"></div>
-    </div>
+ <tr>  
+<td><strong>Disposicion general de la venta</strong></td>
+  <td><strong>DGV</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>
 
-    <div class="tablas">
-        <div class="container-tabla-grande">
-            <table>
-                <tr>
-                    <td>Serie</td>
-                    <td>Categoria</td>
-                    <td>Puntuacion</td>
-                    <td>Rango</td>
-                </tr>
-                <?php
-                    for($i=0;$i<10;$i++){
-                        echo '<tr>';
-                        echo '<td class="tabla-center">'.($i+1).'</td>';
-                        echo '<td>'.$etiquetas[$i].'</td>';
-                        echo '<td class="tabla-center">'.$puntuaciones[$i].'</td>';
-                        echo '<td>'.$consulta['res'.($i+1)].'</td>';
-                    }
-                ?>
-            </table>
-        </div>
-        <div class="container-tabla-chica">
-            <table>
-                <tr>
-                    <td>Puntos Totales</td>
-                    <td></td>
-                    <?php
-                        $puntaje = 0;
-                        for($i=1;$i<11;$i++){
-                            $puntaje += $consulta['puntaje'.$i];
-                        }
-                    ?>
-                    <td><?= $puntaje; ?></td>
-                </tr>
-                <tr>
-                    <td>Rango</td>
-                    <td></td>
-                    <td><?= $consulta['Rango']; ?></td>
-                </tr>
-                <tr>
-                    <td>C.I.</td>
-                    <td></td>
-                    <td><?= $consulta['CI']; ?></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <br>
+<tr>  
+<td><strong>Receptividad</strong></td>
+  <td><strong>R</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>
+
+<tr>  
+<td><strong>Agresividad</strong></td>
+  <td><strong>R</strong></td>
+  <td><strong>8</strong></td>
+  <td><strong>2</strong></td>
+</tr>
+
+<tr>  
+<td><strong>Comprensividad</strong></td>
+  <td><strong>I</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>
+
+<tr>  
+<td><strong>Adaptabilidad</strong></td>
+  <td><strong>II</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
     
+<tr>
 
+<td><strong><!-- ojos locos --></strong></td>
+  <td><strong>III</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+
+<tr>  
+<td><strong><!-- ojos drogados --></strong></td>
+  <td><strong>IV</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+    
+<tr>  
+<td><strong><!-- ojos cansados --></strong></td>
+  <td><strong>V</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+
+<tr>  
+<td><strong><!-- dale ojos --></strong></td>
+  <td><strong>VI</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+
+<tr>  
+<td><strong><!-- ojos chinos XD --></strong></td>
+  <td><strong>VII</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>   
+
+<tr>  
+<td><strong><!-- ojos cabrone -->s</strong></td>
+  <td><strong>VIII</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+    
+<tr>  
+<td><strong><!-- ojos malditos --></strong></td>
+  <td><strong>IX</strong></td>
+  <td><strong>0</strong></td>
+  <td><strong>1</strong></td>
+</tr>    
+    
+    
+    
+    
+    
+    
+    
 <script>
     var etiquetas = ['Moral','Legalidad','Indiferencia','Corrupto','Economico','Politico','Social','Religioso'];
     var datos = [
