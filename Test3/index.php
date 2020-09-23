@@ -26,13 +26,13 @@
     $resultado = mysqli_query($conexion,$sql);
     ?>
     <div class="container_form">
-        <form name="formulario" id="formulario" class="form" method="POST" action="./php/serie_1.php">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/valor.php">
         <?php while($consulta = mysqli_fetch_array($resultado)){ ?>
             <?php echo "<div class='pregunta p".$consulta['numero']."'>";?>
                 <?php echo "<p class='pregunta_".$consulta['numero']." preguntaTexto'>".$consulta['numero'].".- ".$consulta['pregunta']."</p>" ?>
-                <?php echo "<input type='radio' value='A' name='respuesta".$consulta['numero']."'>".$consulta['texto2']."<br>"; ?>
-                <?php echo "<input type='radio' value='B' name='respuesta".$consulta['numero']."'>".$consulta['texto3']."<br>"; ?>
-                <?php echo "<input type='radio' value='C' name='respuesta".$consulta['numero']."'>".$consulta['texto4']."<br>"; ?>
+                <?php echo "<label><input type='radio' value='A' name='respuesta".$consulta['numero']."'>".$consulta['texto2']."</label><br>"; ?>
+                <?php echo "<label><input type='radio' value='B' name='respuesta".$consulta['numero']."'>".$consulta['texto3']."</label><br>"; ?>
+                <?php echo "<label><input type='radio' value='C' name='respuesta".$consulta['numero']."'>".$consulta['texto4']."</label><br>"; ?>
                 <br>
             </div>
         <?php } ?>

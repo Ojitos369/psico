@@ -14,22 +14,6 @@
 </head>
 <body>
     <div class="encabezado"><a href="index.php"><img src="./media/logo.jpg" alt="logo" class="logo"></a></div>
-    <?php
-        if(isset($_GET['nocontestado1'])){
-            $mensaje_error = "
-                <div class=\"error\">
-                    <p>Esta persona aun no ha completado el test 1</p>
-                </div>";
-            echo $mensaje_error;
-        }
-        if(isset($_GET['nocontestado2'])){
-            $mensaje_error = "
-                <div class=\"error\">
-                    <p>Esta persona aun no ha completado el test 2</p>
-                </div>";
-            echo $mensaje_error;
-        }
-    ?>
     <div class="test-container">
         <a href="resultados1.php">
             <div class="test test-1">
@@ -41,7 +25,7 @@
                 <div class="titulo">Consulta Test 2</div>
             </div>
         </a>
-        <a href="#" onclick="mantenimiento()">
+        <a href="resultados3.php">
             <div class="test test-3">
                 <div class="titulo">Consulta Test 3</div>
             </div>
@@ -70,6 +54,42 @@
             </ul>
         </div>
     </div>
+
+    <?php
+        if(isset($_GET['nocontestado1'])){
+            $mensaje_error = "
+                <script>
+                    setTimeout(
+                        function(){
+                            alert('Esta persona aun no ha completado el test 1');
+                        },100
+                    )
+                </script>";
+            echo $mensaje_error;
+        }
+        if(isset($_GET['nocontestado2'])){
+            $mensaje_error = "
+                <script>
+                    setTimeout(
+                        function(){
+                            alert('Esta persona aun no ha completado el test 2');
+                        },100
+                    )
+                </script>";
+            echo $mensaje_error;
+        }
+        if(isset($_GET['nocontestado3'])){
+            $mensaje_error = "
+                <script>
+                    setTimeout(
+                        function(){
+                            alert('Esta persona aun no ha completado el test 3');
+                        },100
+                    )
+                </script>";
+            echo $mensaje_error;
+        }
+    ?>
 <script src="./js/index.js"></script>
 </body>
 </html>
