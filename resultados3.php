@@ -151,7 +151,7 @@
             color: "000"
         },
         plot_bgcolor: "#0000",
-        paper_bgcolor: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,233,0,1) 100%)",
+        paper_bgcolor: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)",
         yaxis: {
             rangemode: "tozero"
         }
