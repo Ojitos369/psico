@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    background: #a60;
+    background: rgba(7, 231, 201, 0.568);
     flex-wrap: nowrap;
     justify-content: space-evenly;
     flex-grow: 1;

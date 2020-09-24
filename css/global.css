@@ -1,18 +1,12 @@
 body{
     background-color: rgb(255,255,255);
     /*
-    rgb
-    rgb #0f 
-    background: #000;
-    #f00;
-    rgb(255,0,0);
-    r=red
-    g=green
-    b=blue
-    rgb (255,0,0) rojo
-    rgb(0,0,0) negro
-    rgba(0,0,0,.5)
-    #0008
+    git config user.email email.kaucer@kraucer.com
+    git config user.name tu_nombre
+    git add .
+    git commit -m "actualizacion de estilo"
+    git push
+    
     */
     color: #000;
 }
