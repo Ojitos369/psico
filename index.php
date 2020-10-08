@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/validacion.css">
+    <link rel="stylesheet" href="./css/segundo.css">
     <title>Ingresar</title>
 </head>
 <body>
@@ -35,6 +36,40 @@
         </form>
         <div class="container-consulta">
             <a href="consulta.php" class="consulta"><button>Consulta</button></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact-moderno">
+            <ul>
+                <li><a href="http://fb.com/rrconecta">Facebook    <img src="./media/fb.png" alt="fb"></a></li>
+                <li><a href="https://twitter.com/rr_conecta">Twitter    <img src="./media/tw.png" alt="tw"></a></li>
+            </ul>
+        </div>
+        <div class="contact-moderno">
+            <ul>
+                <li><a href="https://www.instagram.com/rr_conecta">Instagram    <img src="./media/ig1.png" alt="ig"></a></li>
+                <li><a href="#">Linkedin    <img src="./media/in.png" alt="linkedin"></a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <table>
+                <tr>
+                    <td>
+                        <img class="contacto-img" src="./media/contacto.jpg" alt="contacto">
+                    </td>
+                    <td>
+                        <p class="separador"></p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Telefono</li>
+                            <li>Correo</li>
+                            <li>Pagina</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

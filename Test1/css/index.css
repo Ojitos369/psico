@@ -6,15 +6,38 @@
     position: relative;
     display: flex;
     width: 100%;
-    background: #a60;
+    background: rgba(7, 231, 201, 0.568);
     flex-wrap: nowrap;
     justify-content: space-evenly;
     flex-grow: 1;
     bottom: 0px;
 }
 
+.contact-moderno ul{
+    list-style-type: none;
+}
 li{
     margin: 15px;
+}
+li a{
+    text-decoration: none;
+}
+li a:visited{
+    text-decoration: none;
+}
+li a img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.separador{
+    width: 15px;
+}
+
+.contacto-img{
+    width: 250px;
+    height: 130px;
 }
 
 button{

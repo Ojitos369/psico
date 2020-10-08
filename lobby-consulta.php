@@ -32,26 +32,36 @@
         </a>
     </div>
     <div class="footer">
-        <div class="contacto">
+        <div class="contact-moderno">
             <ul>
-                <li>Telefono</li>
-                <li>Correo</li>
-                <li>Pagina</li>
+                <li><a href="http://fb.com/rrconecta">Facebook    <img src="./media/fb.png" alt="fb"></a></li>
+                <li><a href="https://twitter.com/rr_conecta">Twitter    <img src="./media/tw.png" alt="tw"></a></li>
             </ul>
         </div>
         <div class="contact-moderno">
             <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
+                <li><a href="https://www.instagram.com/rr_conecta">Instagram    <img src="./media/ig1.png" alt="ig"></a></li>
+                <li><a href="#">Linkedin    <img src="./media/in.png" alt="linkedin"></a></li>
             </ul>
         </div>
-        <div class="empresa">
-            <ul>
-                <li>Nosotros</li>
-                <li>Mision</li>
-                <li>Vision</li>
-            </ul>
+        <div class="contacto">
+            <table>
+                <tr>
+                    <td>
+                        <img class="contacto-img" src="./media/contacto.jpg" alt="contacto">
+                    </td>
+                    <td>
+                        <p class="separador"></p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Telefono</li>
+                            <li>Correo</li>
+                            <li>Pagina</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
