@@ -10,7 +10,7 @@
 
 .tablas{
     position: relative;
-    background-color: rgb(223, 226, 32);
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
