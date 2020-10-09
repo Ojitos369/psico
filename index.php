@@ -53,23 +53,7 @@
             </ul>
         </div>
         <div class="contacto">
-            <table>
-                <tr>
-                    <td>
-                        <img class="contacto-img" src="./media/contacto.jpg" alt="contacto">
-                    </td>
-                    <td>
-                        <p class="separador"></p>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Telefono</li>
-                            <li>Correo</li>
-                            <li>Pagina</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <img class="contacto-img" src="./media/contacto.jpg" alt="contacto">
         </div>
     </div>
 </body>
